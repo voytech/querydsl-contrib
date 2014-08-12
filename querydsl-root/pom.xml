@@ -11,7 +11,7 @@
   <parent>
     <groupId>com.mysema.querydsl</groupId>
     <artifactId>querydsl-root</artifactId>
-    <version>3.4.2.BUILD-SNAPSHOT</version>
+    <version>3.4.3.BUILD-SNAPSHOT</version>
   </parent>
 
   <packaging>pom</packaging>
@@ -49,6 +49,7 @@
   <modules>
     <module>../querydsl-dynamodb</module>
     <module>../querydsl-hazelcast</module>
+	<module>../querydsl-elasticsearch</module>
   </modules>
 
 </project>
