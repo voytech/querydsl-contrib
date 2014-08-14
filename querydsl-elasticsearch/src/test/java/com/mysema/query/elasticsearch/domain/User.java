@@ -2,7 +2,9 @@ package com.mysema.query.elasticsearch.domain;
 
 import com.mysema.query.annotations.QueryEntity;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,6 +17,10 @@ public class User {
     public enum Gender {
         MALE, FEMALE
     }
+
+    private java.util.List<User> friends = new ArrayList<User>();
+
+    private java.util.List<User> enemies = new ArrayList<User>();
 
     private String id;
 
@@ -132,6 +138,21 @@ public class User {
         this.details = details;
     }
 
+    public List<User> getFriends() {
+        return friends;
+    }
+
+    public void setFriends(List<User> friends) {
+        this.friends = friends;
+    }
+
+    public List<User> getEnemies() {
+        return enemies;
+    }
+
+    public void setEnemies(List<User> enemies) {
+        this.enemies = enemies;
+    }
 }
 
 
